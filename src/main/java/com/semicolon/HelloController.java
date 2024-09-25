@@ -19,6 +19,11 @@ public class HelloController {
     public String welcome(@PathVariable("name") String name) {
         return "welcome " + name;
     }
+
+    @GetMapping("/human/{name}")
+    public String gender(@PathVariable("name") String name) {
+        return "boy " + name;
+    }
 }
 
 
