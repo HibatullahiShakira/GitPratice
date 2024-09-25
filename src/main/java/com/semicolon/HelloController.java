@@ -20,7 +20,7 @@ public class HelloController {
         return "welcome " + name;
     }
 
-    @GetMapping("/human/{name}")
+    @GetMapping("/smart/{name}")
     public String gender(@PathVariable("name") String name) {
         return "boy " + name;
     }
