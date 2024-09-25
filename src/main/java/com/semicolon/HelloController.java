@@ -14,4 +14,13 @@ public class HelloController {
     public String hello(@PathVariable("name") String name) {
         return "Hello " + name;
     }
+
+    @GetMapping("/welcome/{name}")
+    public String welcome(@PathVariable("name") String name) {
+        return "welcome " + name;
+    }
 }
+
+
+
+
